@@ -259,6 +259,15 @@ main {
   text-align: center;
 }
 
+.links-list figcaption a {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.links-list figcaption .link-wave {
+  display: inline;
+}
+
 .nixie-gallery {
   display: flex;
   gap: 12px;
