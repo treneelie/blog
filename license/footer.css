@@ -1,0 +1,39 @@
+.site-footer {
+  width: min(100%, 48rem);
+  box-sizing: border-box;
+  margin: 1.5rem auto 0;
+  padding: 0.65rem 1rem 0.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--white, #fff);
+  font-family: system-ui, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.site-footer p {
+  margin: 0.2rem 0;
+}
+
+.site-footer__main {
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+}
+
+.site-footer__legal {
+  opacity: 0.75;
+}
+
+.site-footer a:not(.back-link):not(.code-github-link):not(.code-project-link):not(.download-link) {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(255, 255, 255, 0.55);
+  transition: text-decoration-color 0.2s;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  text-decoration-color: currentColor;
+}
