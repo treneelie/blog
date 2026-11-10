@@ -1,0 +1,240 @@
+.code-content {
+  width: min(100%, 1100px);
+  text-align: left;
+}
+
+.code-header {
+  margin: 24px auto 42px;
+  text-align: center;
+}
+
+.code-header h1 {
+  margin: 8px 0 10px;
+}
+
+.code-github-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: min(100%, 640px);
+  margin: 24px auto 0;
+  padding: 14px 18px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 18px;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.16);
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.code-github-link:hover,
+.code-github-link:focus-visible,
+.code-project-link:hover,
+.code-project-link:focus-visible {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.code-github-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--pink);
+  font-size: 25px;
+}
+
+.code-github-link strong,
+.code-github-link small {
+  display: block;
+}
+
+.code-github-link small {
+  margin-top: 3px;
+  opacity: 0.8;
+}
+
+.code-github-url {
+  margin-left: auto;
+  opacity: 0.8;
+  font-size: 13px;
+}
+
+.code-github-link-small {
+  margin: 0 0 20px;
+}
+
+.code-sections {
+  display: grid;
+  gap: 24px;
+}
+
+.code-section {
+  padding: clamp(22px, 4vw, 34px);
+  border: 2px solid rgba(255, 255, 255, 0.65);
+  border-radius: 28px;
+  background: rgba(94, 91, 91, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.code-section h2 {
+  margin: 0 0 20px;
+  font-size: clamp(25px, 5vw, 38px);
+  font-weight: 400;
+}
+
+.code-section p,
+.python-project p {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.code-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(220px, 0.75fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.code-embed {
+  overflow: hidden;
+  min-height: 300px;
+  border: 2px solid rgba(255, 255, 255, 0.65);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.code-embed iframe {
+  display: block;
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+.code-embed-large iframe {
+  height: 350px;
+}
+
+.code-project-link {
+  display: inline-block;
+  margin: 8px 0 20px;
+  padding: 9px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 12px;
+  color: var(--white);
+  font-family: sans-serif;
+  text-underline-offset: 3px;
+}
+
+.code-image-grid,
+.code-pet-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.code-pet-gallery {
+  grid-template-columns: repeat(3, minmax(0, 170px));
+  margin-top: 20px;
+}
+
+.code-image {
+  margin: 0;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.65);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.code-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.code-image figcaption {
+  padding: 10px 12px;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.code-note {
+  margin-bottom: 0;
+  opacity: 0.8;
+  font-size: 14px !important;
+}
+
+.python-projects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.python-project {
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.python-project h3 {
+  margin: 0 0 10px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.python-project p {
+  margin: 6px 0 0;
+}
+
+.python-project-featured,
+.python-project-wide {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 0.8fr);
+  gap: 20px;
+  align-items: center;
+  grid-column: 1 / -1;
+}
+
+.python-project-wide .code-image {
+  max-width: 460px;
+  justify-self: end;
+}
+
+@media (max-width: 700px) {
+  .code-content {
+    padding-top: 34px;
+  }
+
+  .code-feature,
+  .python-project-featured,
+  .python-project-wide,
+  .code-image-grid,
+  .code-pet-gallery,
+  .python-projects {
+    grid-template-columns: 1fr;
+  }
+
+  .code-pet-gallery {
+    max-width: 220px;
+  }
+
+  .python-project-featured,
+  .python-project-wide {
+    grid-column: auto;
+  }
+
+  .python-project-wide .code-image {
+    justify-self: stretch;
+    max-width: none;
+  }
+
+  .code-github-url {
+    display: none;
+  }
+}

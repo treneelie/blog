@@ -96,6 +96,27 @@ h2 {
   margin-top: 14px;
 }
 
+.blog-comments-widget {
+  min-width: 0;
+  padding: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .8);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .92);
+}
+
+.blog-comments-widget .giscus,
+.blog-comments-widget .giscus-frame {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.blog-comments-widget .giscus-frame {
+  min-height: 250px;
+  border: 0;
+}
+
 .guide-links {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

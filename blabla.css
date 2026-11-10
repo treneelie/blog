@@ -1,0 +1,111 @@
+body.blabla-page a:not(.back-link) {
+  color: var(--white);
+  text-decoration: underline;
+  text-decoration-color: var(--white);
+  text-underline-offset: 4px;
+}
+
+body.blabla-page a:not(.back-link):hover,
+body.blabla-page a:not(.back-link):focus-visible {
+  color: var(--white);
+  text-decoration-color: var(--white);
+  animation: none;
+}
+
+body.blabla-page .post-link,
+body.blabla-page .post-link:hover,
+body.blabla-page .post-link:focus-visible {
+  color: var(--white) !important;
+  text-decoration: underline;
+  text-decoration-color: var(--white);
+  text-underline-offset: 4px;
+  animation: none;
+}
+
+body.blabla-page .post-card,
+body.blabla-page .post-card:hover,
+body.blabla-page .post-card:focus-visible,
+body.blabla-page .post-card h2,
+body.blabla-page .post-card p,
+body.blabla-page .post-card .post-link {
+  color: var(--white) !important;
+}
+
+.blog-modal[hidden] {
+  display: none;
+}
+
+.blog-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  padding: clamp(16px, 4vw, 48px);
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.blog-modal .project-modal-window {
+  position: relative;
+  width: min(1100px, 100%);
+  height: min(88vh, 850px);
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  border-radius: 28px;
+  background: var(--pink);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.blog-modal-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  z-index: 1;
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  color: var(--white);
+  font-family: sans-serif;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.blog-modal-close:hover,
+.blog-modal-close:focus-visible {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.blog-modal-close:focus-visible {
+  outline: 3px solid var(--white);
+  outline-offset: 4px;
+}
+
+.blog-modal-frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: var(--pink);
+}
+
+body.blabla-page.modal-open {
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .blog-modal {
+    padding: 10px;
+  }
+
+  .blog-modal .project-modal-window {
+    height: calc(100vh - 20px);
+    border-radius: 18px;
+  }
+
+  .blog-modal-close {
+    top: 7px;
+    right: 9px;
+  }
+}
