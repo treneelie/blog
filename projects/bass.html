@@ -23,46 +23,327 @@
 <body>
     <main class="project-detail">
         <header class="project-header">
-            <h1>Bass</h1>
-            <p class="project-intro">A personal bass project.</p>
+            <div class="decorated-title">
+                <img class="title-decoration title-decoration-left" src="../images/projects/bass/planet1.png" alt=""
+                    aria-hidden="true">
+                <h1>Bass</h1>
+                <img class="title-decoration title-decoration-right" src="../images/projects/bass/planet2.png" alt=""
+                    aria-hidden="true">
+            </div>
+            <p class="project-intro">I wanted to learn how to play bass and work with wood, so I built my own
+                five-string bass.</p>
         </header>
         <section class="project-section project-overview">
             <h2>About the project</h2>
-            <p>More details coming soon.</p>
+            <figure class="about-project-decoration">
+                <img src="../images/projects/bass/final_transparent.png" alt="Finished bass">
+            </figure>
+            <p>I still need to add a few details and do some rewriting.</p>
+            <p>I wanted to learn how to play bass and work with wood, so I built my own five-string bass.</p>
+            <p>Wow this project was a lot of fun but it was also quite challenging. I had to redo and rethink the design
+                all along the way.</p>
+            <p>First of all, I would like to thank the EPFL makerspaces, SKIL and SPOT, as well as all the coaches,
+                without whom I would never have been able to do this.</p>
+            <p>I wanted a five-string bass, even though my friend Constance, who plays the bass, told me it was a bad
+                idea for a beginner (she is right, but I am stubborn). I decided to buy the neck because I acknowledge
+                that I didn't yet have the skills to make it myself. Having never worked with wood, I wanted to start
+                with
+                something that was achievable for me. I decided to go for an active humbucker, the EMG 40DC, rather than
+                a
+                P-Bass or a J-Bass pickup. I chose it mainly for its sound. I don't know that much about pickups, but it
+                seemed like a pretty cool option. The wood I chose was Okoume because it is easy to work with and it is
+                a good wood for instruments.</p>
+            <p>My first design was inspired by the StingRay 5 bass. I also wanted it to be an alien themed
+                bass. My friend Lou designed the pickguard adapted to the shape of the bass
+                I gave her.
+            </p>
+            <div class="bass-design-gallery bass-design-gallery-pair" aria-label="Alien bass designs">
+                <figure><img src="../images/projects/bass/alien1.png" alt="First alien bass design"></figure>
+                <figure><img src="../images/projects/bass/alien2.png" alt="Second alien bass design"></figure>
+            </div>
+            <p>Here is how I wanted the bass to look like. With a little star in the back to change the battery easily.
+                It holds with magnets.
+            </p>
+            <div class="bass-design-gallery bass-design-gallery-pair" aria-label="Bass V1 renders">
+                <figure><img src="../images/projects/bass/bass_v1.png" alt="Front view of the Bass V1"></figure>
+                <figure><img src="../images/projects/bass/bass_v1_back.png" alt="Back view of the Bass V1"></figure>
+            </div>
+            <p>After I had conducted some initial tests by printing the pickguard in two pieces using a single color.
+                My friend Adrian, who had access to a larger printer capable of printing in multiple colors, printed
+                Lou’s design as a single piece:</p>
+            <div class="bass-design-gallery bass-design-gallery-single" aria-label="Pickguard design">
+                <figure><img src="../images/projects/bass/pickguard.jpg" alt="Pickguard designed by Lou"></figure>
+            </div>
+            <p>My first attempt at building the bass was something... First, I created a 3D model in Fusion 360. To
+                accurately model the area where the handle is inserted, I took a photo of the handle's perimeter, traced
+                over it and incorporated it into the 3D model, it works quite well. Then that is where things began to
+                be
+                interesting. I wanted to try doing it with the CNC machine. Well, I didn't in put the right measurements
+                and,
+                because I had to turn the wood over in the process, the backside is offset relative to the top side.</p>
+            <figure class="bass-cnc-video">
+                <video controls muted>
+                    <source src="../images/projects/bass/cnc_vid.mp4" type="video/mp4">
+                </video>
+            </figure>
+            <div class="bass-design-gallery bass-design-gallery-pair" aria-label="CNC build attempts">
+                <figure><img src="../images/projects/bass/cnc_top.jpg" alt="Top view of the CNC bass build"></figure>
+                <figure><img src="../images/projects/bass/cnc_back.jpg" alt="Back view of the CNC bass build"></figure>
+            </div>
+            <p>But it’s okay, I managed to fix it all using a wood router, and even gave the design an
+                intentional-looking effect.</p>
+            <figure class="bass-cnc-video">
+                <video controls muted>
+                    <source src="../images/projects/bass/after_router.mp4" type="video/mp4">
+                </video>
+            </figure>
+            <p>After a long session of sanding, I was finally ready to start figuring out how to put everything
+                together. What a mistake not to have checked that beforehand.</p>
+            <div class="bass-design-gallery bass-design-gallery-pair" aria-label="after sanding">
+                <figure><img src="../images/projects/bass/v1_withalien.jpg" alt="V1 with alien"></figure>
+                <figure><img src="../images/projects/bass/wrong.jpg" alt="wrong size bass"></figure>
+            </div>
+            <p>I realized that I had made a mistake regarding the length of the bass, and that this was the worst
+                possible error I could have made, as it meant I had to start everything over from scratch. It is
+                impossible to extend the bass, because there is far too much tension in that area due to the strings.
+                Besides, it would look terrible. I’m short by 20mm.</p>
+            <p>So I breathed. Cried. And then I started again. But this time, I wanted to do it without CNC and learn
+                how to do every step myself and be more vigilent. So I bought some more wood (there goes my money) and
+                cut it up using a bandsaw. To be precise, throughout the project, I frequently used a technique that
+                involved creating a template with a laser cutter, accounting for the offset required for the router’s
+                guide bushing, and then following that outline with the router.</p>
+            <div class="bass-design-gallery bass-design-gallery-four" aria-label="Second bass version and template">
+                <figure><img src="../images/projects/bass/template.jpg" alt="Bass V2 router template"></figure>
+                <figure><img src="../images/projects/bass/v2_1.jpg" alt="Bass V2 build"></figure>
+                <figure><img src="../images/projects/bass/v2_2.jpg" alt="Bass V2 detail"></figure>
+                <figure><img src="../images/projects/bass/v2_3.jpg" alt="Bass V2 final shape"></figure>
+            </div>
+            <p>And Bam, my dimensions are correct.</p>
+            <div class="bass-design-gallery bass-design-gallery-single" aria-label="correct dimensions">
+                <figure><img src="../images/projects/bass/correct.jpg" alt="correct dimensions"></figure>
+            </div>
+            <p>Since I changed the dimensions and shape of my bass, I had to rethink the pickguard. I didn't want to
+                3D-print it, as I don't find the finish particularly attractive. I considered cutting it out of
+                plexiglass or anodized aluminum, though the latter wouldn't work with the machines I had access to, as
+                it isn't conductive,but eventually, one of the coachs where I was building my bass suggested I use some
+                of
+                his laminated wood. It was perfect, and it’s a beautiful shade of green. To install the pickguard, I
+                drilled holes using a drill press, inserted threaded inserts, and then added some nice-looking screws.
+                Here are some photos of the
+                anodized aluminium I considered, then a photo of laser cut shape to test the dimensions, and finally the
+                final pickguard:</p>
+            <div class="bass-design-gallery bass-design-gallery-three"
+                aria-label="Pickguard materials and final version">
+                <figure><img src="../images/projects/bass/alu.jpg" alt="Anodized aluminum considered for the pickguard">
+                </figure>
+                <figure><img src="../images/projects/bass/pickguard_form.jpg" alt="Laser-cut pickguard test shape">
+                </figure>
+                <figure><img src="../images/projects/bass/final_pickguard.jpeg" alt="Final laminated wood pickguard">
+                </figure>
+            </div>
+            <figure class="bass-cnc-video">
+                <video controls muted>
+                    <source src="../images/projects/bass/cnc_pickguard.mp4" type="video/mp4">
+                </video>
+            </figure>
+            <p>Yes I know, for the pickguard I had no choice but to use the CNC.</p>
+            <p>To hide the batteries, I changed the star design to planets made of MDF, which I then painted.</p>
+            <div class="bass-design-gallery bass-design-gallery-four" aria-label="Planet designs for battery cover">
+                <figure><img src="../images/projects/bass/planet_0.jpg" alt="planet"></figure>
+                <figure><img src="../images/projects/bass/planet_1.jpeg" alt="planet"></figure>
+                <figure><img src="../images/projects/bass/planet_2.jpg" alt="planet"></figure>
+                <figure><img src="../images/projects/bass/planet_3.jpg" alt="planet"></figure>
+            </div>
+            <p>Choosing the paints was quite a process, too. In the end, I was advised against using acrylic spray
+                paint, it would have looked bad, and was told to go with polyurethane paint instead. I went to a paint
+                shop, where I was told to go to an auto body shop. The auto body shop then tried to sell us paint that
+                was completely wrong. A coach at Skil had some pink paint and let me try it out, so I ultimately decided
+                to buy the same kind.</p>
+            <div class="bass-design-gallery bass-design-gallery-four" aria-label="Paint">
+                <figure><img src="../images/projects/bass/paint1.jpg" alt="paint"></figure>
+                <figure><img src="../images/projects/bass/paint2.jpg" alt="paint"></figure>
+                <figure><img src="../images/projects/bass/paint3.jpg" alt="paint"></figure>
+                <figure><img src="../images/projects/bass/paint4.jpg" alt="paint"></figure>
+            </div>
+            <p>I also ran into issues with the bass guitar's tuning machines, as the screws were poor quality and
+                snapped off inside the wood, even though I had drilled pilot holes. I also 3D printed some cylinders to
+                hold the tuning machines firmly in place, since the holes in the neck were too large.</p>
+            <h3 class="cost-title">Bass cost</h3>
+            <p>Here is an overview of the costs associated with building my custom five-string bass (I could have done
+                it for cheaper I think):</p>
+            <div class="project-costs">
+                <div class="cost-column cost-column-left">
+                    <section class="cost-group">
+                        <h4>Ruco paint</h4>
+                        <dl>
+                            <div>
+                                <dt>Expressator (primer)</dt>
+                                <dd>19.26 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Magistrator (paint)</dt>
+                                <dd>24.71 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Sleeve</dt>
+                                <dd>2.04 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Brush</dt>
+                                <dd>0.72 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Additional raw material</dt>
+                                <dd>2.20 CHF</dd>
+                            </div>
+                        </dl>
+                        <p class="cost-total">Total <strong>48.93 CHF</strong></p>
+                    </section>
+                    <section class="cost-group">
+                        <h4>Skil / Spot</h4>
+                        <dl>
+                            <div>
+                                <dt>MDF <span>(I'm not entirely sure)</span></dt>
+                                <dd>30 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Inserts</dt>
+                                <dd>3 CHF</dd>
+                            </div>
+                        </dl>
+                        <p class="cost-total">Total <strong>33 CHF</strong></p>
+                    </section>
+                    <section class="cost-group">
+                        <h4>Purchased but ultimately not used</h4>
+                        <dl>
+                            <div>
+                                <dt>Lou SVG design</dt>
+                                <dd>30 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>3D printing</dt>
+                                <dd>2.60 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Primer spray</dt>
+                                <dd>12.95 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Clear coat spray</dt>
+                                <dd>12.95 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Spray lacquer x2</dt>
+                                <dd>35.9 CHF</dd>
+                            </div>
+                        </dl>
+                        <p class="cost-total">Total <strong>94.4 CHF</strong></p>
+                    </section>
+                </div>
+                <div class="cost-column cost-column-right">
+                    <section class="cost-group">
+                        <h4>Wood</h4>
+                        <dl>
+                            <div>
+                                <dt>UPS import fees</dt>
+                                <dd>34.50 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Madinter wood 40.00 € + shipping 36.72 €</dt>
+                                <dd>72.31 CHF</dd>
+                            </div>
+                        </dl>
+                        <p class="cost-total">Total <strong>106.81 CHF</strong></p>
+                    </section>
+                    <section class="cost-group">
+                        <h4>Electronics / hardware - Thomann</h4>
+                        <dl>
+                            <div>
+                                <dt>EMG 40DC</dt>
+                                <dd>98 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Harley Benton Parts Copper Shielding Tape</dt>
+                                <dd>4.40 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Fender Hi Mass Bridge V Brass</dt>
+                                <dd>35 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Kluson MKBRC x1</dt>
+                                <dd>6.30 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Kluson MKBLC x4</dt>
+                                <dd>25.20 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Daddario EXL170-5</dt>
+                                <dd>22.50 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Maxell M9V</dt>
+                                <dd>2.15 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Dunlop Straploks Nickel</dt>
+                                <dd>21.60 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Gotoh Neck Plate C</dt>
+                                <dd>8 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Sommer Cable The Spirit XXL Instr. Gold 3.0</dt>
+                                <dd>21.60 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Thomann E-Bass Gigbag Eco</dt>
+                                <dd>13.40 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Fender Ultra String Guides</dt>
+                                <dd>7.60 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Harley Benton HB-20B</dt>
+                                <dd>71 CHF</dd>
+                            </div>
+                            <div>
+                                <dt>Minotaur Dave Black</dt>
+                                <dd>31 CHF</dd>
+                            </div>
+                        </dl>
+                        <p class="cost-total">Total <strong>367.75 CHF</strong></p>
+                    </section>
+                </div>
+                <p class="cost-grand-total">𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 TOTAL : <strong>650.89 CHF</strong> 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞</p>
+            </div>
         </section>
         <section class="project-section">
-            <h2>Details</h2>
+            <h2>Photos</h2>
             <div class="project-gallery">
-                <figure><img src="../images/projects/bass1.jpg" alt="Bass project"></figure>
-                <figure><img src="../images/projects/bass2.jpg" alt="Bass detail"></figure>
-                <figure><img src="../images/projects/bass3.jpg" alt="Bass project detail"></figure>
-                <figure><img src="../images/projects/bass4.jpg" alt="Bass project detail"></figure>
+                <figure><img src="../images/projects/bass/bass1.jpg" alt="Bass project"></figure>
+                <figure><img src="../images/projects/bass/bass2.jpg" alt="Bass detail"></figure>
+                <figure><img src="../images/projects/bass/bass3.jpg" alt="Bass project detail"></figure>
+                <figure><img src="../images/projects/bass/bass4.jpg" alt="Bass project detail"></figure>
                 <figure><video controls muted>
-                        <source src="../images/projects/bass_vid1.mp4" type="video/mp4">
+                        <source src="../images/projects/bass/bass_vid1.mp4" type="video/mp4">
                     </video></figure>
                 <figure><video controls muted>
-                        <source src="../images/projects/bass_vid2.mp4" type="video/mp4">
+                        <source src="../images/projects/bass/bass_vid2.mp4" type="video/mp4">
                     </video></figure>
             </div>
         </section>
         <section class="project-section blog-comments" aria-labelledby="comments-title">
             <h2 id="comments-title">Comments &amp; ideas</h2>
             <div class="blog-comments-widget">
-                <script src="https://giscus.app/client.js"
-                    data-repo="treneelie/blog"
-                    data-repo-id="R_kgDOVBB19Q"
-                    data-category-id="DIC_kwDOVBB19c4DK1GZ"
-                    data-mapping="title"
-                    data-strict="0"
-                    data-reactions-enabled="1"
-                    data-emit-metadata="0"
-                    data-input-position="bottom"
-                    data-theme="catppuccin_latte"
-                    data-lang="en"
-                    data-loading="lazy"
-                    crossorigin="anonymous"
-                    async>
-                </script>
+                <script src="https://giscus.app/client.js" data-repo="treneelie/blog" data-repo-id="R_kgDOVBB19Q"
+                    data-category-id="DIC_kwDOVBB19c4DK1GZ" data-mapping="title" data-strict="0"
+                    data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom"
+                    data-theme="catppuccin_latte" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+                    </script>
             </div>
         </section>
     </main>
